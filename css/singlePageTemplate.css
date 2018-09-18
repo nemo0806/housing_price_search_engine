@@ -120,6 +120,14 @@ ul li:hover a {
 	margin-bottom: 5px;
 	font-size: 44px;
 }
+.form-search{
+	align-self: center;
+	align-content: center;
+	align-items: center;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
 .gallery {
 	clear: both;
 	display: inline-block;

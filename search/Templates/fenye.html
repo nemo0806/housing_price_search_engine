@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分页结果</title>
+</head>
+<body>
+
+<ul>
+{% for contact in contacts %}
+<li>{{contact}}<br><br></li>
+{% endfor %}
+</ul>
+
+<div>
+<div style="text-align: center;">
+{% if contacts.has_previous %}
+<a href="?page={{ contacts.previous_page_number }}"> 上一页</a>
+{% endif %}
+<span>
+    {% for p in contacts.paginator.page_range %}
+    {% ifequal p contacts.number %}
+    <span class="current">{{p}}</span>
+	{% else %}
+	<a href="?page={{p}}" title="第{{p}}页"><button>{{p}}</button></a>
+	{% endifequal %}
+    {% endfor %}
+</span>
+{% if contacts.has_next %}
+<a href="?page={{ contacts.next_page_number }}">下一页 > </a>
+{% endif %}
+<a>[page:{{ contacts.number }}/{{ contacts.paginator.num_pages }}]</a>
+</div>
+</div>
+<div style="text-align: center;">
+	<br>
+    <button onclick="window.location.href='http://127.0.0.1:8000/'">返回首页</button>
+</div>
+
+
+</body>
+</html>

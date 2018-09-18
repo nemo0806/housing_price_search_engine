@@ -42,24 +42,12 @@
     <div class="thumbnail">
       <h1 class="stats">24</h1>
       <h4>城市 </h4>
-      <p>One line description</p>
-    </div>
-    <div class="thumbnail">
-      <h1 class="stats">2300</h1>
-      <h4>TITLE</h4>
-      <p>One line description</p>
-    </div>
-    <div class="thumbnail">
+</div>
+<div class="thumbnail">
       <h1 class="stats">67424</h1>
       <h4>房源</h4>
-      <p>One line description</p>
-    </div>
-    <div class="thumbnail">
-      <h1 class="stats">9870</h1>
-      <h4>TITLE</h4>
-      <p>One line description</p>
-    </div>
-  </div>
+</div>
+</div>
   <section class="about" id="about">
 <h2 class="hidden">About</h2>
     <p class="text_column">Note 1: the searching bar for "name" and "location" can be left blank. </p>
@@ -71,29 +59,29 @@
   <!-- Parallax Section -->
   <section class="banner">
     <h2 class="parallax" data_temp_dwid="1">让我们从此开始</h2>
-    <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-  </section>
+</section>
   <!-- More Info Section -->
   <footer>
-    <article class="footer_column">
-      <h3>ABOUT</h3>
-      <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
-    </article>
-    <article class="footer_column">
-      <h3>LOCATION</h3>
-      <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
-    </article>
+<article class="footer_column"> </article>
   </footer>
   <!-- Footer Section -->
   <section class="footer_banner" id="contact">
     <h2 class="hidden">Footer Banner Section </h2>
-    <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
-    <div class="button">subscribe</div>
+    <p class="hero_header">search bar</p>
+    <form method="POST" class="form-search">
+      {%csrf_token%}
+      {{ form }}
+      <input type="submit" value="提交">
+    </form>
+    <div class="button">
+<p>subMIT </p>
+    </div>
+<div class="button">
+      <p>subMIT </p>
+    </div>
   </section>
   <!-- Copyrights Section -->
-  <div class="copyright">&copy;2015 - <strong>Light Theme</strong></div>
+  <div class="copyright">&copy;2018 - <strong>Luo s &amp; tian j</strong></div>
 </div>
 <!-- Main Container Ends -->
 </body>

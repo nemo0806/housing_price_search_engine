@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Search Engine for Housing in China</title>
+<style type="text/css">
+@import url("styles.css");
+</style>
+</head>
+<body>
+            <h1>Search Engine</h1>
+                <p class="lead">This is a simple search engine for housing in China.</p>
+                <p>
+                    Note 1: the searching bar for "name" and "location" can be left blank.
+                </p>
+                <p>
+                    Note 2: searching for multiple keywords is supported in the searching bar of "name" (each keyword should be separated by semicolon (;)), and the retrieved contents with the most corresponding keywords will be listed first.
+                </p>
+                <p>
+                    Note 3: please type the smallest area you would accept in the searching bar of "area"
+                </p>
+                <p>
+                    Note 4: please type the highest price you can afford in the searching bar of "price"
+                </p>
+
+                <p>
+                    Special Notice: this website is for searching different contents separately in different searching bars, if you want a vague search, please click <a href="vague/">here</a>.
+                </p>
+
+                <form method="POST" class="form-search">{%csrf_token%}
+                    {{ form }}
+                    <input type="submit" value="提交">
+                </form>
+
+                <hr/ color="yellow">
+
+
+
+
+
+</body>
+</html>

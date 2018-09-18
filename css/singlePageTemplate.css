@@ -97,14 +97,14 @@ ul li:hover a {
 }
 /* About Section */
 .text_column {
-	width: 29%;
-	text-align: justify;
+	width: 21%;
+	text-align: center;
 	font-weight: lighter;
 	line-height: 25px;
-	float: left;
+	float:left;
 	padding-left: 20px;
 	padding-right: 20px;
-	color: #A3A3A3;
+	color: #000000;
 }
 .about {
 	padding-left: 25px;
@@ -118,6 +118,7 @@ ul li:hover a {
 .stats {
 	color: #717070;
 	margin-bottom: 5px;
+	font-size: 44px;
 }
 .gallery {
 	clear: both;
@@ -143,6 +144,8 @@ ul li:hover a {
 	margin-bottom: 5px;
 	margin-left: 5px;
 	color: #52BAD5;
+	font-family: "等线";
+	font-size: 24px;
 }
 .gallery .thumbnail p {
 	margin-top: 0px;
@@ -164,9 +167,11 @@ ul li:hover a {
 	color: #FFFFFF;
 	text-align: right;
 	padding-right: 100px;
-	padding-top: 110px;
+	padding-top: 140px;
 	letter-spacing: 2px;
 	margin-top: 0px;
+	font-family: "等线";
+	font-size: 44px
 }
 .parallax_description {
 	color: #FFFFFF;

@@ -77,9 +77,9 @@ ul li:hover a {
 /* Hero Section */
 .hero {
 	background-color: #B3B3B3;
-	padding-top: 300px;
-	padding-bottom: 150px;
-	background-image:url(../images/balnkblue.png); 
+	padding-top: 400px;
+	padding-bottom: 250px;
+	background-image:url(../images/hero.png); 
 	background-repeat:no-repeat; 
 	background-size:100% 100%;
 }

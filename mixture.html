@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Search Engine for Housing in China (vague search)</title>
+</head>
+<body>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="inner cover">
+            <h1>Search Engine (vague search)</h1>
+                <p class="lead">This is a simple search engine for housing in China.(vague search)</p>
+                <p>
+                    Note: searching for multiple keywords is supported in the searching bar of "name" (each keyword should be separated by semicolon (;)), and the retrieved contents with the most corresponding keywords will be listed first.
+                </p>
+                <form method="POST" class="form-search">{%csrf_token%}
+                    {{ form }}
+                    <input type="submit" value="提交">
+                </form>
+
+                <hr/ color="yellow">
+
+            </div>
+
+         </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+</body>
+</html>

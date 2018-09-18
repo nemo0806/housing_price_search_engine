@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results of searching</title>
+</head>
+<body>
+         <p>
+
+         </p>
+         <div align="left">
+                 {% for Houses in House_list %}
+                    <div>
+                        <i>{{Houses.name}}</i>, {{Houses.city}}, {{Houses.location}}, {{ Houses.area }}, {{ Houses.price }}
+                    </div>
+                 {% endfor %}
+
+         <p>
+
+         </p>
+         <div align="left">
+                 {% for Houses in House_list_weak %}
+                    <div>
+                        <i>{{Houses.name}}</i>, {{Houses.city}}, {{Houses.location}}, {{ Houses.area }}, {{ Houses.price }}
+                    </div>
+                 {% endfor %}
+
+
+</body>
+</html>
